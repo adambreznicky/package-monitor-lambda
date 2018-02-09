@@ -45,17 +45,17 @@ pml.monitor(repos, recipients, region, source);
 
 # Arguments
 Four required arguments: `pml.monitor(repos, recipients, region, source);`
-1. **repos** - the application repositories you wish to check the dependecies of.
+* **repos** - the application repositories you wish to check the dependecies of.
   * Must be an **Array** of **Objects**
   * Each Object must have the `owner`, `name`, and `subdirectory` keys
   * `owner` is the repo owner as a string. will be an individual or organization.
   * `name` is the repo name as a string.
   * `subdirectory` is the subfolder path the 'package.json' file resides in if it is not in the base of the project. If it is in the base, this should equal an empty sting (like `''`). If the 'package.json' is nested, provide the path to the directory using only forward slashes between each directory step. For example, if 'package.son' is in `<base>/src/app` use `'src/app'`, or if it is in `<base>/app` use `'app'`
-2. **recipients** - array of email strings who will notified of the available package updates
+* **recipients** - array of email strings who will notified of the available package updates
   * Must be an **Array**
-3. **region** - the AWS region where the Lambda & SES reside, such as 'us-east-1'
+* **region** - the AWS region where the Lambda & SES reside, such as 'us-east-1'
   * Must be a **string**
-4. **source** - the AWS SES verified email address to send the notification from
+* **source** - the AWS SES verified email address to send the notification from
   * Must be a **string**
 
 ### Notice
