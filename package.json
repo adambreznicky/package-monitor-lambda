@@ -1,0 +1,33 @@
+{
+  "name": "package-monitor-lambda",
+  "version": "1.0.0",
+  "description": "NodeJS package.json dependency monitor for AWS Lambda functions to send email notifications when packages are out of date",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adambreznicky/package-monitor-lambda.git"
+  },
+  "keywords": [
+    "package.json",
+    "AWS",
+    "lambda",
+    "dependency",
+    "dependencies",
+    "updates"
+  ],
+  "author": "Adam Breznicky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adambreznicky/package-monitor-lambda/issues"
+  },
+  "homepage": "https://github.com/adambreznicky/package-monitor-lambda#readme",
+  "dependencies": {
+    "aws-sdk": "^2.191.0",
+    "get-file": "^2.0.0",
+    "npm-check-updates": "^2.14.0",
+    "ramda": "^0.25.0"
+  }
+}
