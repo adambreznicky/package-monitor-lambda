@@ -109,7 +109,7 @@ function monitor(repos, recipients, region, source) {
     throw new Error('repos and recipients arguments required in the proper format');
   }
 
-  if (Array.isArray(repo) === false || Array.isArray(recipients) === false || typeof region != 'string' || typeof source != 'string') {
+  if (Array.isArray(repos) === false || Array.isArray(recipients) === false || typeof region != 'string' || typeof source != 'string') {
     throw new Error('invalid argument type. repo must be an array of properly formatted objects (view README). recipients must be an array of email strings. region must be an aws region string. source must be an aws ses verified email string.');
   }
 
