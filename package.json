@@ -1,6 +1,6 @@
 {
   "name": "package-monitor-lambda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeJS package.json dependency monitor for AWS Lambda functions to send email notifications when packages are out of date",
   "main": "index.js",
   "scripts": {
