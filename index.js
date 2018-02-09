@@ -109,8 +109,8 @@ function monitor(repos, recipients, region, source) {
     throw new Error('repos and recipients arguments required in the proper format');
   }
 
-  if (typeof repo != 'object' || Array.isArray(recipients) === false || typeof region != 'string' || typeof source != 'string') {
-    throw new Error('invalid argument type. repo must be a properly formatted object (view README). recipients must be an array of email strings. region must be an aws region string. source must be an aws ses verified email string.');
+  if (Array.isArray(repo) === false || Array.isArray(recipients) === false || typeof region != 'string' || typeof source != 'string') {
+    throw new Error('invalid argument type. repo must be an array of properly formatted objects (view README). recipients must be an array of email strings. region must be an aws region string. source must be an aws ses verified email string.');
   }
 
   input['recipients'] = recipients;
