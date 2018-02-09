@@ -105,8 +105,8 @@ function checkRepo(repo) {
 }
 
 function monitor(repos, recipients, region, source) {
-  if(arguments.length < 2) {
-    throw new Error('repos and recipients arguments required in the proper format');
+  if(arguments.length < 4) {
+    throw new Error('missing arguments. 4 arguments required in the proper format. please view the README.');
   }
 
   if (Array.isArray(repos) === false || Array.isArray(recipients) === false || typeof region != 'string' || typeof source != 'string') {
